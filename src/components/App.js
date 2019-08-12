@@ -1,6 +1,7 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import { ProductConsumer } from "../context";
+import ProductListAPI from './ProductAPI/ProductListAPI';
 // import ProductCreate from "./products/ProductCreate";
 // import ProductEdit from "./products/ProductEdit";
 // import ProductDelete from "./products/ProductDelete";
@@ -32,6 +33,7 @@ const App = () => {
               return (
                 <React.Fragment>
                   <Route path="/product" exact component={ProductList} />
+                  <Route path="/productAPI" exact component={ProductListAPI} />
                   <Route path="/details" exact component={ProductDetails} />
                   <Route path="/cart" exact component={Cart} />
                   {/* <Route component={Default} /> */}
